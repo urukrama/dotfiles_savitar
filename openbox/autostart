@@ -1,0 +1,23 @@
+#!/bin/sh 
+# OpenOffice gtk theme
+export OOO_FORCE_DESKTOP=gnome
+# feh stores the last background in .fehbg 
+eval `cat $HOME/.fehbg` &
+xmodmap -e "keycode 233 = XF86Forward" &
+xmodmap -e "keycode 234 = XF86Back" &
+xmodmap -e "remove Lock = Caps_Lock" &
+sleep 2 && xmodmap -e "add Shift = Caps_Lock" &
+unclutter -idle 5&
+thunar --daemon &
+docker &
+urxvtd -q -o -f &
+
+# Panel
+sleep 1 && tdc &
+sleep 2 && wicd-gtk &
+#sleep 2 && bbpager -w &
+sleep 2 && ibus-daemon &
+sleep 2 && xfce4-power-manager &
+/usr/lib/notification-daemon/notification-daemon &
+
+#xautolock -locker  "xte 'key Scroll_Lock'" -corners 0+00 -cornerdelay 0 &
