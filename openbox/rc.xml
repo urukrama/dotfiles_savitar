@@ -28,7 +28,7 @@
     <monitor>Any</monitor>
   </placement>
   <theme>
-    <name>Children of the Earth</name>
+    <name>Erthe</name>
     <titleLayout>SLIMC</titleLayout>
     <!--
       avaible characters are NDSLIMC, each can occur at most once.
@@ -61,10 +61,10 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuHeader">
-      <name>nu</name>
+      <name>Corbel</name>
       <size>8</size>
       <!-- font size in points -->
-      <weight>Normal</weight>
+      <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
       <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
@@ -73,7 +73,7 @@
       <name>Corbel</name>
       <size>8</size>
       <!-- font size in points -->
-      <weight>Normal</weight>
+      <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
       <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
@@ -128,7 +128,7 @@
     <!-- 'Left', 'Middle', 'Right' -->
   </dock>
   <keyboard>
-    <chainQuitKey>C-g</chainQuitKey>
+    <chainQuitKey>A-Escape</chainQuitKey>
     <!-- Keybindings for desktop switching -->
     <keybind key="C-A-Left">
       <action name="DesktopLeft">
@@ -176,11 +176,6 @@
       <action name="ToggleDockAutohide"/>
     </keybind>
     <!-- Keybindings for windows -->
-    <keybind key="A-Escape">
-      <action name="Lower"/>
-      <action name="FocusToBottom"/>
-      <action name="Unfocus"/>
-    </keybind>
     <keybind key="W-space">
       <action name="ShowMenu">
         <menu>client-menu</menu>
@@ -357,7 +352,7 @@
     <!-- Keybindings for running applications -->
     <keybind key="A-p">
       <action name="execute">
-        <execute>/home/urukrama/.scripts/OBdmenu</execute>
+        <execute>~/.scripts/dmenu_raise.sh</execute>
       </action>
     </keybind>
     <keybind key="Pause">
@@ -377,7 +372,7 @@
     </keybind>
     <keybind key="A-F1">
       <action name="execute">
-        <execute>geany</execute>
+        <execute>leafpad</execute>
       </action>
     </keybind>
     <keybind key="A-F2">
@@ -397,12 +392,12 @@
     </keybind>
     <keybind key="A-F4">
       <action name="execute">
-        <execute>/home/urukrama/.scripts/only_thunar</execute>
+        <execute>~/.scripts/only_thunar</execute>
       </action>
     </keybind>
     <keybind key="A-F5">
       <action name="Execute">
-        <execute>/home/urukrama/.scripts/only_quodlibet</execute>
+        <execute>~/.scripts/only_quodlibet</execute>
       </action>
     </keybind>
     <keybind key="A-F6">
@@ -447,7 +442,7 @@
     </keybind>
     <keybind key="A-F12">
       <action name="Execute">
-        <execute>wine "/home/urukrama/.wine/drive_c/Bhaktivedanta VedaBase 2003/Views.exe" "/home/urukrama/.wine/drive_c/Bhaktivedanta VedaBase 2003/Nfo/Bhaktivedanta Vedabase 2003.nfo"</execute>
+        <execute>wine "~/.wine/drive_c/Bhaktivedanta VedaBase 2003/Views.exe" "~/.wine/drive_c/Bhaktivedanta VedaBase 2003/Nfo/Bhaktivedanta Vedabase 2003.nfo"</execute>
       </action>
     </keybind>
     <keybind key="A-Scroll_Lock">
@@ -623,32 +618,32 @@
       </keybind>
       <keybind key="f">
         <action name="Execute">
-          <execute>/bin/sh /home/urukrama/.fehbg</execute>
+          <execute>/bin/sh ~/.fehbg</execute>
         </action>
       </keybind>
       <keybind key="e">
         <action name="Execute">
-          <execute>/home/urukrama/.scripts/logout</execute>
+          <execute>~/.scripts/logout</execute>
         </action>
       </keybind>
       <keybind key="s">
         <action name="Execute">
-          <execute>/home/urukrama/.scripts/shutdown</execute>
+          <execute>~/.scripts/shutdown</execute>
         </action>
       </keybind>
       <keybind key="t">
         <action name="Execute">
-          <execute>/home/urukrama/.scripts/cpu_notify.sh</execute>
+          <execute>~/.scripts/cpu_notify.sh</execute>
         </action>
       </keybind>
       <keybind key="d">
         <action name="Execute">
-          <execute>/home/urukrama/.scripts/date_notify.sh</execute>
+          <execute>~/.scripts/date_notify.sh</execute>
         </action>
       </keybind>
       <keybind key="l">
         <action name="Execute">
-          <execute>/home/urukrama/.scripts/dzen_calendar</execute>
+          <execute>~/.scripts/dzen_calendar</execute>
         </action>
       </keybind>
       <keybind key="r">
@@ -659,22 +654,22 @@
       </keybind>
       <keybind key="c">
         <action name="Execute">
-          <execute>geany /home/urukrama/.config/openbox/rc.xml</execute>
+          <execute>gedit ~/.config/openbox/rc.xml</execute>
         </action>
       </keybind>
       <keybind key="a">
         <action name="Execute">
-          <execute>geany /home/urukrama/.config/openbox/autostart.sh</execute>
+          <execute>gedit ~/.config/openbox/autostart.sh</execute>
         </action>
       </keybind>
       <keybind key="m">
         <action name="Execute">
-          <execute>geany /home/urukrama/.config/openbox/menu.xml</execute>
+          <execute>gedit ~/.config/openbox/menu.xml</execute>
         </action>
       </keybind>
       <keybind key="x">
         <action name="Execute">
-          <execute>/home/urukrama/.scripts/logout</execute>
+          <execute>~/.scripts/logout</execute>
         </action>
       </keybind>
     </keybind>
@@ -736,7 +731,7 @@
         <action name="Move"/>
       </mousebind>
       <mousebind button="Left" action="DoubleClick">
-        <action name="ToggleShade"/>
+        <action name="ToggleMaximize"/>
       </mousebind>
       <mousebind button="Middle" action="Press">
         <action name="Lower"/>
@@ -1146,7 +1141,7 @@
       <decor>no</decor>
       <maximized>yes</maximized>
     </application>
-    <application class="Gedit">
+    <application class="Gedit" type="normal">
       <decor>no</decor>
       <maximized>yes</maximized>
     </application>

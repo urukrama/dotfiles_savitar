@@ -74,7 +74,7 @@
 				<item label="Vedabase">
 					<action name="Execute">
 						<execute>
-							wine &quot;/home/urukrama/.wine/drive_c/Bhaktivedanta VedaBase 2003/Views.exe&quot; &quot;/home/urukrama/.wine/drive_c/Bhaktivedanta VedaBase 2003/Nfo/Bhaktivedanta Vedabase 2003.nfo&quot;
+							wine &quot;~/.wine/drive_c/Bhaktivedanta VedaBase 2003/Views.exe&quot; &quot;~/.wine/drive_c/Bhaktivedanta VedaBase 2003/Nfo/Bhaktivedanta Vedabase 2003.nfo&quot;
 						</execute>
 					</action>
 				</item>
@@ -132,6 +132,20 @@
 				</item>
 			</menu>
 			<menu id="7" label="Media">
+				<item label="PiTiVi">
+					<action name="Execute">
+						<execute>
+							pitivi
+						</execute>
+					</action>
+				</item>
+				<item label="Avidemux">
+					<action name="Execute">
+						<execute>
+							avidemux
+						</execute>
+					</action>
+				</item>
 				<item label="Quod Libet">
 					<action name="Execute">
 						<execute>
@@ -173,10 +187,17 @@
 			</item>
 			<separator/>
 			<menu id="root-menu-24750-21538" label="Clean Up">
+				<item label="Clear Opera cache">
+					<action name="Execute">
+						<execute>
+							rm -rf &quot;~/.opera/cache&quot;
+						</execute>
+					</action>
+				</item>
 				<item label="Remove Flash files">
 					<action name="Execute">
 						<execute>
-							rm -rf &quot;/home/urukrama/.adobe&quot; &amp;&amp; rm -rf &quot;/home/urukrama/.macromedia&quot;
+							rm -rf &quot;~/.adobe&quot; &amp;&amp; rm -rf &quot;~/.macromedia&quot;
 						</execute>
 					</action>
 				</item>
@@ -185,21 +206,21 @@
 				<item label="zshrc">
 					<action name="Execute">
 						<execute>
-							mousepad &quot;/home/urukrama/.zshrc&quot;
+							mousepad &quot;~/.zshrc&quot;
 						</execute>
 					</action>
 				</item>
 				<item label="Xdefaults">
 					<action name="Execute">
 						<execute>
-							gedit &quot;/home/urukrama/.Xdefaults&quot;
+							gedit &quot;~/.Xdefaults&quot;
 						</execute>
 					</action>
 				</item>
 				<item label="Screen">
 					<action name="Execute">
 						<execute>
-							mousepad &quot;/home/urukrama/.screenrc&quot;
+							mousepad &quot;~/.screenrc&quot;
 						</execute>
 					</action>
 				</item>
@@ -209,7 +230,7 @@
 				<item label="Desktops Folder">
 					<action name="Execute">
 						<execute>
-							feh -g 640x480 -S filename /home/urukrama/Images/Desktops/
+							feh -g 640x480 -S filename ~/Images/Desktops/
 						</execute>
 					</action>
 				</item>
@@ -217,217 +238,210 @@
 				<item label="SP Grey">
 					<action name="Execute">
 						<execute>
-							feh --bg-scale &quot;/home/urukrama/Images/Desktops/SP_Grey.jpg&quot;
-						</execute>
-					</action>
-				</item>
-				<item label="Sri Sri Radha Gopinatha">
-					<action name="Execute">
-						<execute>
-							feh --bg-scale &quot;/home/urukrama/Images/Desktops/Radha_Gopinatha.jpg&quot;
+							feh --bg-scale &quot;~/Images/Desktops/SP_Grey.jpg&quot;
 						</execute>
 					</action>
 				</item>
 				<item label="Caitanya Candra">
 					<action name="Execute">
 						<execute>
-							feh --bg-scale &quot;/home/urukrama/Images/Desktops/caitanyacandra.jpg&quot;
+							feh --bg-scale &quot;~/Images/Desktops/caitanyacandra.jpg&quot;
 						</execute>
 					</action>
 				</item>
 				<item label="Life">
 					<action name="Execute">
 						<execute>
-							feh --bg-scale &quot;/home/urukrama/Images/Desktops/desktops/life.jpg&quot;
+							feh --bg-scale &quot;~/Images/Desktops/desktops/life.jpg&quot;
 						</execute>
 					</action>
 				</item>
 				<item label="awake">
 					<action name="Execute">
 						<execute>
-							feh --bg-scale &quot;/home/urukrama/Images/Desktops/awake.jpg&quot;
+							feh --bg-scale &quot;~/Images/Desktops/awake.jpg&quot;
 						</execute>
 					</action>
 				</item>
 				<item label="dharma">
 					<action name="Execute">
 						<execute>
-							feh --bg-scale &quot;/home/urukrama/Images/Desktops/dharma.jpg&quot;
+							feh --bg-scale &quot;~/Images/Desktops/dharma.jpg&quot;
 						</execute>
 					</action>
 				</item>
 				<item label="dharma cloth">
 					<action name="Execute">
 						<execute>
-							feh --bg-scale &quot;/home/urukrama/Images/Desktops/dharma_cloth.jpg&quot;
+							feh --bg-scale &quot;~/Images/Desktops/dharma_cloth.jpg&quot;
 						</execute>
 					</action>
 				</item>
 				<item label="dharma confused">
 					<action name="Execute">
 						<execute>
-							feh --bg-scale &quot;/home/urukrama/Images/Desktops/confused.jpg&quot;
+							feh --bg-scale &quot;~/Images/Desktops/confused.jpg&quot;
 						</execute>
 					</action>
 				</item>
 				<item label="Green stripes">
 					<action name="Execute">
 						<execute>
-							feh --bg-scale &quot;/home/urukrama/Images/Desktops/green_stripes.png&quot;
+							feh --bg-scale &quot;~/Images/Desktops/green_stripes.png&quot;
 						</execute>
 					</action>
 				</item>
 				<item label="Innocent">
 					<action name="Execute">
 						<execute>
-							feh --bg-scale &quot;/home/urukrama/Images/Desktops/Innocent_1280.jpg&quot;
+							feh --bg-scale &quot;~/Images/Desktops/Innocent_1280.jpg&quot;
 						</execute>
 					</action>
 				</item>
 				<item label="Lonely">
 					<action name="Execute">
 						<execute>
-							feh --bg-scale &quot;/home/urukrama/Images/Desktops/Lonely.jpg&quot;
+							feh --bg-scale &quot;~/Images/Desktops/Lonely.jpg&quot;
 						</execute>
 					</action>
 				</item>
 				<item label="dulce encanto">
 					<action name="Execute">
 						<execute>
-							feh --bg-scale &quot;/home/urukrama/Images/Desktops/dulce_encanto_by_mariux.jpg&quot;
+							feh --bg-scale &quot;~/Images/Desktops/dulce_encanto_by_mariux.jpg&quot;
 						</execute>
 					</action>
 				</item>
 				<item label="Silence">
 					<action name="Execute">
 						<execute>
-							feh --bg-scale &quot;/home/urukrama/Images/Desktops/Silence.jpg&quot;
+							feh --bg-scale &quot;~/Images/Desktops/Silence.jpg&quot;
 						</execute>
 					</action>
 				</item>
 				<item label="Sadhu">
 					<action name="Execute">
 						<execute>
-							feh --bg-scale &quot;/home/urukrama/Images/Desktops/Sadhu.jpg&quot;
+							feh --bg-scale &quot;~/Images/Desktops/Sadhu.jpg&quot;
 						</execute>
 					</action>
 				</item>
 				<item label="Sky">
 					<action name="Execute">
 						<execute>
-							feh --bg-scale &quot;/home/urukrama/Images/Desktops/Sky.jpg&quot;
+							feh --bg-scale &quot;~/Images/Desktops/Sky.jpg&quot;
 						</execute>
 					</action>
 				</item>
 				<item label="Satsvarupa">
 					<action name="Execute">
 						<execute>
-							feh --bg-scale &quot;/home/urukrama/Images/Desktops/sdg.jpg&quot;
+							feh --bg-scale &quot;~/Images/Desktops/sdg.jpg&quot;
 						</execute>
 					</action>
 				</item>
 				<item label="Krsna Gayatri">
 					<action name="Execute">
 						<execute>
-							feh --bg-scale &quot;/home/urukrama/Images/Desktops/Krsna_gayatri.jpg&quot;
+							feh --bg-scale &quot;~/Images/Desktops/Krsna_gayatri.jpg&quot;
 						</execute>
 					</action>
 				</item>
 				<item label="Path">
 					<action name="Execute">
 						<execute>
-							feh --bg-scale &quot;/home/urukrama/Images/Desktops/Tiles.jpg&quot;
+							feh --bg-scale &quot;~/Images/Desktops/Tiles.jpg&quot;
 						</execute>
 					</action>
 				</item>
 				<item label="Curling Out">
 					<action name="Execute">
 						<execute>
-							feh --bg-scale &quot;/home/urukrama/Images/Desktops/curling_out_by_netghost.jpg&quot;
+							feh --bg-scale &quot;~/Images/Desktops/curling_out_by_netghost.jpg&quot;
 						</execute>
 					</action>
 				</item>
 				<item label="Refugees">
 					<action name="Execute">
 						<execute>
-							feh --bg-scale &quot;/home/urukrama/Images/Desktops/Refugees.jpg&quot;
+							feh --bg-scale &quot;~/Images/Desktops/Refugees.jpg&quot;
 						</execute>
 					</action>
 				</item>
 				<item label="Prana">
 					<action name="Execute">
 						<execute>
-							feh --bg-scale &quot;/home/urukrama/Images/Desktops/Prana.jpg&quot;
+							feh --bg-scale &quot;~/Images/Desktops/Prana.jpg&quot;
 						</execute>
 					</action>
 				</item>
 				<item label="Dandelion">
 					<action name="Execute">
 						<execute>
-							feh --bg-scale &quot;/home/urukrama/Images/Desktops/dandelion.jpg&quot;
+							feh --bg-scale &quot;~/Images/Desktops/dandelion.jpg&quot;
 						</execute>
 					</action>
 				</item>
 				<item label="Monk">
 					<action name="Execute">
 						<execute>
-							feh --bg-scale &quot;/home/urukrama/Images/Desktops/Monk.jpg&quot;
+							feh --bg-scale &quot;~/Images/Desktops/Monk.jpg&quot;
 						</execute>
 					</action>
 				</item>
 				<item label="Carthusian">
 					<action name="Execute">
 						<execute>
-							feh --bg-scale &quot;/home/urukrama/Images/Desktops/Carthusian.jpg&quot;
+							feh --bg-scale &quot;~/Images/Desktops/Carthusian.jpg&quot;
 						</execute>
 					</action>
 				</item>
 				<item label="Thomkins Park">
 					<action name="Execute">
 						<execute>
-							feh --bg-scale &quot;/home/urukrama/Images/Desktops/Thomkins_Park.jpg&quot;
+							feh --bg-scale &quot;~/Images/Desktops/Thomkins_Park.jpg&quot;
 						</execute>
 					</action>
 				</item>
 				<item label="Direction">
 					<action name="Execute">
 						<execute>
-							feh --bg-scale &quot;/home/urukrama/Images/Desktops/direction.jpg&quot;
+							feh --bg-scale &quot;~/Images/Desktops/direction.jpg&quot;
 						</execute>
 					</action>
 				</item>
 				<item label="Love is an Action">
 					<action name="Execute">
 						<execute>
-							feh --bg-scale &quot;/home/urukrama/Images/Desktops/love_is_an_action.jpg&quot;
+							feh --bg-scale &quot;~/Images/Desktops/love_is_an_action.jpg&quot;
 						</execute>
 					</action>
 				</item>
 				<item label="Sanctuary">
 					<action name="Execute">
 						<execute>
-							feh --bg-scale &quot;/home/urukrama/Images/Desktops/Awakened.jpg&quot;
+							feh --bg-scale &quot;~/Images/Desktops/Awakened.jpg&quot;
 						</execute>
 					</action>
 				</item>
 				<item label="Sri">
 					<action name="Execute">
 						<execute>
-							feh --bg-scale &quot;/home/urukrama/Images/Desktops/Sri.png&quot;
+							feh --bg-scale &quot;~/Images/Desktops/Sri.png&quot;
 						</execute>
 					</action>
 				</item>
 				<item label="Abandoned">
 					<action name="Execute">
 						<execute>
-							feh --bg-scale &quot;/home/urukrama/Images/Desktops/Abandoned.jpg&quot;
+							feh --bg-scale &quot;~/Images/Desktops/Abandoned.jpg&quot;
 						</execute>
 					</action>
 				</item>
 				<item label="Sparkling Green">
 					<action name="Execute">
 						<execute>
-							feh --bg-center &quot;/home/urukrama/Images/Desktops/Sparkling_green-1280x800.jpg&quot;
+							feh --bg-center &quot;~/Images/Desktops/Sparkling_green-1280x800.jpg&quot;
 						</execute>
 					</action>
 				</item>
@@ -436,14 +450,14 @@
 				<item label="Gtk Theme">
 					<action name="Execute">
 						<execute>
-							mousepad &quot;/home/urukrama/.gtkrc-2.0&quot;
+							mousepad &quot;~/.gtkrc-2.0&quot;
 						</execute>
 					</action>
 				</item>
 				<item label="Fonts and Icons">
 					<action name="Execute">
 						<execute>
-							mousepad &quot;/home/urukrama/.gtkrc.mine&quot;
+							mousepad &quot;~/.gtkrc.mine&quot;
 						</execute>
 					</action>
 				</item>
@@ -476,21 +490,21 @@
 				<item label="Autostart">
 					<action name="Execute">
 						<execute>
-							mousepad &quot;/home/urukrama/.config/openbox/autostart.sh&quot;
+							mousepad &quot;~/.config/openbox/autostart.sh&quot;
 						</execute>
 					</action>
 				</item>
 				<item label="Configuration">
 					<action name="Execute">
 						<execute>
-							mousepad &quot;/home/urukrama/.config/openbox/rc.xml&quot;
+							mousepad &quot;~/.config/openbox/rc.xml&quot;
 						</execute>
 					</action>
 				</item>
 				<item label="Menu">
 					<action name="Execute">
 						<execute>
-							mousepad &quot;/home/urukrama/.config/openbox/menu.xml&quot;
+							mousepad &quot;~/.config/openbox/menu.xml&quot;
 						</execute>
 					</action>
 				</item>
@@ -509,14 +523,335 @@
 			<item label="Shut down">
 				<action name="Execute">
 					<execute>
-						/home/urukrama/.scripts/shutdown
+						~/.scripts/shutdown
 					</execute>
 				</action>
 			</item>
 			<item label="Log out">
 				<action name="Execute">
 					<execute>
-						/home/urukrama/.scripts/logout
+						~/.scripts/logout
+					</execute>
+				</action>
+			</item>
+		</menu>
+	</menu>
+	<menu id="book-menu" label="Books">
+		<menu id="book-menu-911113" label="Bhagavad-gita">
+			<item label="Sankara-bhasya">
+				<action name="Execute">
+					<execute>
+						gedit &quot;~/Books/Bhagavad-gita/BG_sankara-bhasya.txt&quot;
+					</execute>
+				</action>
+			</item>
+			<item label="Ramanuja-bhasya">
+				<action name="Execute">
+					<execute>
+					gedit &quot;~/Books/Bhagavad-gita/BG_ramanuja-bhasya.txt&quot;
+					</execute>
+				</action>
+			</item>
+			<item label="Bhagavad-gita (Sargeant)">
+				<action name="Execute">
+					<execute>
+					evince &quot;~/Books/Bhagavad-gita/Sargeant, Winthrop. Bhagavad Gita 25th Anniversary Edition.pdf&quot;
+					</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="book-menu-274127" label="Bhagavata">
+			<menu id="book-menu-274127-114456" label="Sridhara Svami">
+				<item label="Canto 1">
+					<action name="Execute">
+						<execute>
+							command
+						</execute>
+					</action>
+				</item>
+			</menu>
+			<item label="Canto 1">
+				<action name="Execute">
+					<execute>
+						command
+					</execute>
+				</action>
+			</item>
+			<item label="Canto 2">
+				<action name="Execute">
+					<execute>
+						command
+					</execute>
+				</action>
+			</item>
+			<item label="Canto 3">
+				<action name="Execute">
+					<execute>
+						command
+					</execute>
+				</action>
+			</item>
+			<item label="Canto 4">
+				<action name="Execute">
+					<execute>
+						command
+					</execute>
+				</action>
+			</item>
+			<item label="Canto 5">
+				<action name="Execute">
+					<execute>
+						command
+					</execute>
+				</action>
+			</item>
+			<item label="Canto 6">
+				<action name="Execute">
+					<execute>
+						command
+					</execute>
+				</action>
+			</item>
+			<item label="Canto 7">
+				<action name="Execute">
+					<execute>
+						command
+					</execute>
+				</action>
+			</item>
+			<item label="Canto 8">
+				<action name="Execute">
+					<execute>
+						command
+					</execute>
+				</action>
+			</item>
+			<item label="Canto 9">
+				<action name="Execute">
+					<execute>
+						command
+					</execute>
+				</action>
+			</item>
+			<menu id="book-menu-274127-674351" label="Canto 10">
+				<item label="Rasa-pancadhyaya">
+					<action name="Execute">
+						<execute>
+							command
+						</execute>
+					</action>
+				</item>
+				<item label="1. Chapters Xto Y">
+					<action name="Execute">
+						<execute>
+							command
+						</execute>
+					</action>
+				</item>
+			</menu>
+			<item label="Canto 11">
+				<action name="Execute">
+					<execute>
+						command
+					</execute>
+				</action>
+			</item>
+			<item label="Canto 12">
+				<action name="Execute">
+					<execute>
+						command
+					</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="book-menu-181410" label="Upanisads">
+			<menu id="book-menu-181410-885743" label="Bhasyas">
+				<item label="Rangaramanuja Brhad-aranyaka-bhasya">
+					<action name="Execute">
+						<execute>
+							evince &quot;~/Books/Upanisads/RANGARAMANUJA_BrihadaranyakopanishadBhashya.djvu&quot;
+						</execute>
+					</action>
+				</item>
+				<item label="Rangaramanuja Chandogya-bhasya">
+					<action name="Execute">
+						<execute>
+							evince &quot;~/Books/Upanisads/RANGARAMANUJA_ChandogyopanishadBhashya.djvu&quot;
+						</execute>
+					</action>
+				</item>
+				<separator/>
+				<item label="Isa Sankara-bhasya">
+					<action name="Execute">
+						<execute>
+							command
+						</execute>
+					</action>
+				</item>
+			</menu>
+			<menu id="book-menu-181410-564046" label="Isavasya Upanisad">
+				<item label="Three Isa Bhasyas">
+					<action name="Execute">
+						<execute>
+							evince &quot;~/Documents/Current/Isa Bhasyas/Isa_Sankara_Desika_bhasya.pdf&quot;
+						</execute>
+					</action>
+				</item>
+				<item label="Dvaita Bhasyas">
+					<action name="Execute">
+						<execute>
+							evince &quot;~/Documents/Current/Isa Bhasyas/Skt Texts/Madhva_dvaita_bhasyas.pdf&quot;
+						</execute>
+					</action>
+				</item>
+				<item label="Raghavendra Tirtha">
+					<action name="Execute">
+						<execute>
+							evince &quot;~/Documents/Current/Isa Bhasyas/Skt Texts/Ishaa_bhaashhya_Raghavendra.pdf&quot;
+						</execute>
+					</action>
+				</item>
+			</menu>
+			<separator/>
+			<item label="Gopala-tapani Upanisad">
+				<action name="Execute">
+					<execute>
+						urxvtc -e antiword ~/Books/Upanisads/gopala-tapani_upanisad_-_critical-edition.doc | less
+					</execute>
+				</action>
+			</item>
+			<item label="Subala Upanisad">
+				<action name="Execute">
+					<execute>
+						gedit &quot;~/Books/Upanisads/subala.txt&quot;
+					</execute>
+				</action>
+			</item>
+			<item label="The Early Upanisads (Olivelle)">
+				<action name="Execute">
+					<execute>
+						evince &quot;~/Books/Upanisads/The_Early_Upanishads__Annotated_Text_and_Translation__South_Asia_Research_.pdf&quot;
+					</execute>
+				</action>
+			</item>
+		</menu>
+		<separator/>
+		<menu id="book-menu-382622" label="Rupa Gosvami">
+			<item label="BRS 1. Purva-vibhaga">
+				<action name="Execute">
+					<execute>
+						gedit &quot;~/Books/Rupa Gosvami/bhakti_rasamrita_sindhu_1_purva.txt&quot;
+					</execute>
+				</action>
+			</item>
+			<item label="BRS 2. Daksina-vibhaga">
+				<action name="Execute">
+					<execute>
+						gedit &quot;~/Books/Rupa Gosvami/bhakti_rasamrita_sindhu_2_daksina.txt&quot;
+					</execute>
+				</action>
+			</item>
+			<item label="BRS 3. Pascima-vibhaga">
+				<action name="Execute">
+					<execute>
+						gedit &quot;~/Books/Rupa Gosvami/bhakti_rasamrita_sindhu_3_paschima.txt&quot;
+					</execute>
+				</action>
+			</item>
+			<item label="BRS 4. Uttara-vibhaga">
+				<action name="Execute">
+					<execute>
+						gedit &quot;~/Books/Rupa Gosvami/bhakti_rasamrita_sindhu_4_uttara.txt&quot;
+					</execute>
+				</action>
+			</item>
+			<item label="BRS Mula-matram">
+				<action name="Execute">
+					<execute>
+						gedit &quot;~/Books/Rupa%20Gosvami/bhakti-rasamrita-sindhu_mula-matram.txt&quot;
+					</execute>
+				</action>
+			</item>
+			<item label="BRS Haberman">
+				<action name="Execute">
+					<execute>
+						gedit &quot;~/Books/Rupa Gosvami/HABERMAN Bhaktirasamrtasindhu.pdf&quot;
+					</execute>
+				</action>
+			</item>
+			<separator/>
+			<item label="Laghu-bhagavatamrta">
+				<action name="Execute">
+					<execute>
+						gedit &quot;~/Books/Rupa Gosvami/Laghu-bhagavatamrta.txt&quot;
+					</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="book-menu-522953" label="Jiva Gosvami">
+			<menu id="book-menu-522953-343041" label="Bhakti-sandarbha (SND)">
+				<item label="Bhakti-sandarbha 1-178">
+					<action name="Execute">
+						<execute>
+							evince &quot;~/Books/Jiva Gosvami/Bhakti_Sandarbha/Bhakti-sandarbha V1_anu_1-178 SND.pdf&quot;
+						</execute>
+					</action>
+				</item>
+				<item label="Bhakti-sandarbha 179-213">
+					<action name="Execute">
+						<execute>
+							evince &quot;~/Books/Jiva Gosvami/Bhakti_Sandarbha/Bhakti-sandarbha V2_anu_179-213 SND.pdf&quot;
+						</execute>
+					</action>
+				</item>
+				<item label="Bhakti-sandarbha 214-end">
+					<action name="Execute">
+						<execute>
+							evince &quot;~/Books/Jiva Gosvami/Bhakti_Sandarbha/Bhakti-sandarbha V3 SND.pdf&quot;
+						</execute>
+					</action>
+				</item>
+			</menu>
+			<separator/>
+			<item label="1. Tattva-sandarbha">
+				<action name="Execute">
+					<execute>
+						gedit &quot;~/Books/Jiva Gosvami/1.tattva_sandarbha.txt&quot;
+					</execute>
+				</action>
+			</item>
+			<item label="2. Bhagavat-sandarbha">
+				<action name="Execute">
+					<execute>
+						gedit &quot;~/Books/Jiva Gosvami/2.bhagavat_sandarbha.txt&quot;
+					</execute>
+				</action>
+			</item>
+			<item label="3. Paramatma-sandarbha">
+				<action name="Execute">
+					<execute>
+						gedit &quot;~/Books/Jiva Gosvami/3.paramatma_sandarbha.txt&quot;
+					</execute>
+				</action>
+			</item>
+			<item label="4. Krsna-sandarbha">
+				<action name="Execute">
+					<execute>
+						gedit &quot;~/Books/Jiva Gosvami/4.krishna_sandarbha.txt&quot;
+					</execute>
+				</action>
+			</item>
+			<item label="5. Bhakti-sandarbha">
+				<action name="Execute">
+					<execute>
+						gedit &quot;~/Books/Jiva Gosvami/5.bhakti_sandarbha.txt&quot;
+					</execute>
+				</action>
+			</item>
+			<item label="6. Priti-sandarbha">
+				<action name="Execute">
+					<execute>
+						gedit &quot;~/Books/Jiva Gosvami/6.priti_sandarbha.txt&quot;
 					</execute>
 				</action>
 			</item>
