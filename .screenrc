@@ -1,0 +1,35 @@
+escape ^aa 
+startup_message off
+vbell off
+msgwait 2
+defscrollback 5000
+defutf8 on
+shell zsh
+shelltitle "$ |term"
+#shelltitle ">|zsh"
+
+# detach on hangup
+autodetach on
+
+#caption always "%{= bb}%{+b w}%n %h %=%t %c"
+#hardstatus alwayslastline "%-Lw%{= BW}%50>%n%f* %t%{-}%+Lw%<"
+
+caption splitonly "%3n - %{w}%t"
+hardstatus alwayslastline 
+hardstatus string '%{= B}[ %H%{= B} ] %= %{= b} %?%-Lw%?%{B}( %{= B}%n* %t%?(%u)%?%{B} )%{b}%?%+Lw%?%?%= %{B}[ %C %A%{= B} ]'
+
+bind 'Q' quit
+bind '+' resize +5
+bind '-' resize -5
+bind 'q' remove
+bind 'R' screen -t "% |root" su
+bind 'M' screen -t "alpine" alpine 
+bind 'E' screen -t "elinks" elinks
+
+# change window with ALT-. ALT-,
+bindkey "^[," prev
+bindkey "^[;" next
+
+screen -t "term"   0  
+screen -t "htop"   1 htop
+#screen -t "term"   2 
